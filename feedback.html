@@ -1,0 +1,71 @@
+<HTML>
+<HEAD>
+<TITLE>Feedback</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function check()
+{
+var a
+if (((document.f1.name.value)== "") || ((document.f1.email.value)== ""))
+{
+alert("Please enter your Name and E-mail and rate our webpage before submitting.")
+}
+else
+{
+alert("Thanks for rating our webpage "+ document.f1.rating.value +"/5 Mr/Mrs" +" "+ document.f1.name.value)
+}
+}
+</SCRIPT>
+</HEAD>
+<BODY background="BG2.jpg" text=white><font face="Times New Romans" size=4><i>
+<h2 align=center><u>FEEDBACK</u></h2><br>
+<div style="position:absolute;margin-left:10%">
+<FORM NAME="f1">
+Name:<INPUT TYPE="text" NAME="name" size="30"><br>
+Email: <INPUT TYPE="text" NAME="email" size="40"><br>
+Phone Number: <INPUT TYPE="text" NAME="pn"  size="25"><br>
+Any Complains/suggestion about the Webpage :<br>
+<textarea size=400 cols=40 rows=5 name="txtarea"></textarea><br><br>
+Rate our webpage on a scale of 1-5 : <br>
+<input type="radio" name="rating" value="1">1
+<input type="radio" name="rating" value="2">2
+<input type="radio" name="rating" value="3">3
+<input type="radio" name="rating" value="4">4
+<input type="radio" name="rating" value="5">5<br><br>
+<input type="checkbox" name="offer1" value="off1">I would like to receive more information in future about selected products through
+<select>
+<option>Call</option>
+<option>Message</option>
+<option>E-mail</option>
+<option>WhatsApp</option>
+<option>All of the above</option>
+</select><br>
+<div style="position:absolute;margin-left:5%">
+<input type="checkbox" name="prodcts" value="products">ALIENWARE<br>
+<input type="checkbox" name="prodcts" value="products">ASUS<br>
+<input type="checkbox" name="prodcts" value="products">MSI<br>
+<input type="checkbox" name="prodcts" value="products">APPLE<br>
+<input type="checkbox" name="prodcts" value="products">DELL<br>
+</div>
+<div style="position:absolute;margin-left:25%">
+<input type="checkbox" name="prodcts" value="products">HEWLETT-PACKARD (HP)<br>
+<input type="checkbox" name="prodcts" value="products">ACER<br>
+<input type="checkbox" name="prodcts" value="products">LENOVO<br>
+<input type="checkbox" name="prodcts" value="products">SAMSUNG<br>
+<input type="checkbox" name="prodcts" value="products">TOSHIBA<br>
+</div><br><br><br><br><br><br>
+<input type="checkbox" name="offer2" value="off2">I would like to receive information about new products realeased through
+<select>
+<option>Call</option>
+<option>Message</option>
+<option>E-mail</option>
+<option>WhatsApp</option>
+<option>All of the above</option>
+</select><br>
+<INPUT TYPE="button" NAME="button1" Value="Submit" onclick="check()">
+<INPUT TYPE="Reset" NAME="b2" Value="Reset">
+</FORM>
+</div>
+</i></font>
+</BODY>
+</HTML>
+
